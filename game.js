@@ -91,18 +91,12 @@ function move() {
     ballY = ballY + ballSpeedY;
     var diffY;
 
-    //if (ballX >= canvas.width || ballX <= 0)
-    //ballSpeedX = -ballSpeedX;
     if (ballX <= 15) {
-        //ballSpeedX = -ballSpeedX;
-        //console.log(ballY);
         if (ballY > paddle1Y && ballY < paddle1Y + PADDLE_HEIGHT) {
             ballSpeedX = -ballSpeedX;
-            //console.log(paddle1Y);
             diffY = ballY - (paddle1Y + PADDLE_HEIGHT / 2);
             ballSpeedY = diffY * 0.5;
         } else {
-            //console.log(ballY);
             compScore++;
             ballReset();
         }
