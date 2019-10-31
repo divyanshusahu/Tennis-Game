@@ -138,3 +138,5 @@ function ballReset() {
     ballX = canvas.width / 2;
     ballY = canvas.height / 2;
 }
+
+//And that's how it ends
